@@ -4,11 +4,11 @@
 //  1. random array
 
 // 1. Finds the smallest value in an array
-function findSmallestIndex(array) {
-  var smallestElement = array[0]; // Stores the smallest value
-  var smallestIndex = 0; // Stores the index of the smallest value
+const findSmallestIndex = array => {
+  let smallestElement = array[0]; // Stores the smallest value
+  let smallestIndex = 0; // Stores the index of the smallest value
 
-  for (var i = 1; i < array.length; i++) {
+  for (let i = 1; i < array.length; i++) {
     if (array[i] < smallestElement) {
       smallestElement = array[i];
       smallestIndex = i;
@@ -19,13 +19,13 @@ function findSmallestIndex(array) {
 }
 
 // 2. Sort the array
-function selectionSort(array) {
-  var sortedArray = [];
-  var length = array.length;
+const selectionSort = array => {
+  let sortedArray = [];
+  let length = array.length;
 
-  for (var i = 0; i < length; i++) {
+  for (let i = 0; i < length; i++) {
     // Finds the smallest element in the array 
-    var smallestIndex = findSmallestIndex(array);
+    let smallestIndex = findSmallestIndex(array);
     // Adds the smallest element to new array
     sortedArray.push(array.splice(smallestIndex, 1)[0]);
   }
