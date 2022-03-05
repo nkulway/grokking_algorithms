@@ -5,7 +5,7 @@
  * @param {Array} array Array of numbers
  * @returns {total} Sum of the numbers
  */
-function sum(array) {
+let sum = array => {
   let total = 0;
   for (let i = 0; i < array.length; i++) {
     total += array[i];
