@@ -5,7 +5,7 @@
  * @param {Array} array Array of numbers
  * @returns {number} Sum of the numbers
  */
-function sumReduce(array) {
+let sumReduce = array => {
   return array.reduce(function(curr, prev) {
     return curr + prev;
   });
