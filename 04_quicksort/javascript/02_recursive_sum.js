@@ -5,7 +5,7 @@
  * @param {Array} array Array of numbers
  * @returns {number} Sum of the numbers
  */
-function sumRecursive(array) {
+let sumRecursive = array => {
   if (array.length == 1) return array[0];
   return array[0] + sumRecursive(array.slice(1));
 }
