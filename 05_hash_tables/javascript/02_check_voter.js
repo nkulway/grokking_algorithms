@@ -6,7 +6,7 @@ const voted = {};
  * Vote check
  * @param {string} name Voter name
  */
-function check_voter(name) {
+let checkVoter = name => {
   if (voted[name]) {
     console.log("kick them out!");
   } else {
